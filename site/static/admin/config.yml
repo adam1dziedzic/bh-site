@@ -85,7 +85,7 @@ collections: # A list of collections the CMS should be able to edit
               {label: "Previous Company Logo", name: "previous_company", widget: image} 
             ]}
           ]}
-          - {label: "Community", name: "community", widget: object: fields: [
+          - {label: "Community", name: "community", widget: object, fields: [
             {label: "Heading", name: "heading", widget: string},
             {label: "Description", name: "description", widget: string},
             {label: "Circles", name: "circles", widget: list, fields: [
