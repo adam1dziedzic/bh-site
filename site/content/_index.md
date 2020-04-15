@@ -38,7 +38,8 @@ trusted_by:
 short_info:
     heading: We deliver high quality IT teams.
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rutrum mi ipsum, nec lobortis lectus accumsan in. Morbi in dignissim sapien. Proin faucibus cursus augue in pellentesque. Maecenas dapibus et mauris non pharetra. In tincidunt justo quis tincidunt elementum. Mauris sed dui mauris. Maecenas in cursus ligula. Suspendisse ac quam nec ligula ullamcorper pulvinar ac sit amet mi.
-points: 
+points:
+    points:
     - heading: Top Verified Experts from Europe
       description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rutrum mi ipsum, nec lobortis lectus accumsan in.
     - heading: We match the team for project.

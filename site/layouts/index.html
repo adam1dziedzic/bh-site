@@ -4,6 +4,8 @@
 
 {{ partial "short-text" .Params.short_info}}
 
+{{ partial "points" .Params.points}}
+
 {{ partial "2-up" .Params }}
 
 {{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }}
