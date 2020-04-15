@@ -100,7 +100,7 @@ community:
           description: Eget scelerisque risus (h)
 meet_us:
     title: "Meet us at:"
-    mettings:
+    meetings:
         - logo: testUrl
           date: 11.02.2020
           event: Finovate Berlin
