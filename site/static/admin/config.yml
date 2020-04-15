@@ -37,6 +37,23 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Values", name: "values", widget: "object", fields: [
               {label: "Heading", name: "heading", widget: string},
               {label: "Text", name: "text", widget: "text"}]}
+          - {label: "Video", name: "video", widget: "object", fields: [
+              {label: "Clients", name: "clients", widget: "object", fields: [
+                {label: "Video", name: "video", widget: file},
+                {label: "Title", name: "title", widget: string},
+                {label: "Subtitle", name: "subtitle", widget: string}
+              ]},
+              {label: "Specialists", name: "specialists", widget: "object", fields: [
+                {label: "Video", name: "video", widget: file},
+                {label: "Title", name: "title", widget: string},
+                {label: "Subtitle", name: "subtitle", widget: string}
+              ]},
+          ]}
+          - {label: "Trusted by", name: "trusted_by", widget: "list", fields: [
+            {label: "Brand", name: "brand", widget: "string"},
+            {label: "Description", name: "description", widget: string},
+            {label: "Author", name: "author", widget: string}
+          ]}
       - file: "site/content/contact/_index.md"
         label: "Contact Page"
         name: "contact"
