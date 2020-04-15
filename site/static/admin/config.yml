@@ -38,21 +38,102 @@ collections: # A list of collections the CMS should be able to edit
               {label: "Heading", name: "heading", widget: string},
               {label: "Text", name: "text", widget: "text"}]}
           - {label: "Video", name: "video", widget: "object", fields: [
-              {label: "Clients", name: "clients", widget: "object", fields: [
+              {label: "Clients", name: "clients", widget: object, fields: [
                 {label: "Video", name: "video", widget: file},
                 {label: "Title", name: "title", widget: string},
                 {label: "Subtitle", name: "subtitle", widget: string}
               ]},
-              {label: "Specialists", name: "specialists", widget: "object", fields: [
+              {label: "Specialists", name: "specialists", widget: object, fields: [
                 {label: "Video", name: "video", widget: file},
                 {label: "Title", name: "title", widget: string},
                 {label: "Subtitle", name: "subtitle", widget: string}
               ]},
           ]}
-          - {label: "Trusted by", name: "trusted_by", widget: "list", fields: [
+          - {label: "Trusted by", name: "trusted_by", widget: list, fields: [
             {label: "Brand", name: "brand", widget: "string"},
             {label: "Description", name: "description", widget: string},
             {label: "Author", name: "author", widget: string}
+          ]}
+          - {label: "Short info", name: "short_info", widget: object, fields: [
+            {label: "Heading", name: "heading", widget: string },
+            {label: "Description", name: "description", widget: string}
+          ]}
+          - {label: "Points", name: "points", widget: list, fields: [
+            {label: "Heading", name: "heading", widget: string},
+            {label: "Description", name: "description", widget: string}
+          ]}
+          - {label: "How we work", name: "how_we_work", widget: object: fields: [
+            {label: "Title", name: "title", widget: string},
+            {label: "Description", name: "description", widget: string},
+            {label: "Options", name: "options", widget: list, fields: [
+              {label: "Heading", name: "heading", widget: string},
+              {label: "Description", name: "description", widget: string},
+              {label: "Action", name: "action", widget: string},
+              {label: "Action URL", name: "action_url", widget: string}
+            ]}
+          ]}
+          - {label: "Coworkers", name: "coworkers", widget: object, fields: [
+            {label: "Title", name: "title", widget: string},
+            {label: "Descritpion", name: "description", widget: string},
+            {label: "Items", name: "items", widget: list, fields: [{label: "Item", name: "item", widget: string}]},
+            {label: "Logos", name: "logos", widget: list, fields: [{label: "Logo", name: "url", widget: image}]},
+            {label: "Coworkers", name: "coworkers", widget: list, fields: [
+              {label: "Name", name: "name", widget: string},
+              {label: "Avatar", name: "avatar", widget: image},
+              {label: "Role", name: "role", widget: string},
+              {label: "Description", name: "description", widget: string},
+              {label: "Previous Company Logo", name: "previous_company", widget: image} 
+            ]}
+          ]}
+          - {label: "Community", name: "community", widget: object: fields: [
+            {label: "Heading", name: "heading", widget: string},
+            {label: "Description", name: "description", widget: string},
+            {label: "Circles", name: "circles", widget: list, fields: [
+              {label: "Value", name: "value", widget: string},
+              {label: "Description", name: "description", widget: string}
+            ]}
+          ]}
+          - {label: "Meet us at", name: "meet_us", widget: object, fields: [
+            {label: "Title", name: "title", widget: string},
+            {label: "Meetings", name: "meetings", widget: list, fields: [
+              {label: "Logo", name: "logo", widget: image},
+              {label: "Date", name: "date", widget: date},
+              {label: "Event", name: "event", widget: string},
+              {label: "Location", name: "location", widget: string},
+              {label: "Attendees", name: "attendees", widget: list, fields: [
+                {label: "Avatar", name: "avatar", widget: image},
+                {label: "Social Logo", name: 'social_logo', widget: image}
+              ]}
+            ]}
+          ]}
+          - {label: "Clients", name: "clients", widget: object, fields: [
+            {label: "Title", name: "title", widget: string},
+            {label: "Clients", name: "clients", widget: list, fields: [
+              {label: "Image", name: "image", widget: image},
+              {label: "Title", name: "title", widget: string},
+              {label: "Description", name: "description", widget: string},
+              {label: "Previuos stack", name: "stack_previous", widget: list, fields: [
+                {label: "Logo", name: "logo", widget: image}
+              ]},
+              {label: "Next stack", name: "stack_next", widget: list, fields: [
+                {label: "Logo", name: "logo", widget: image}
+              ]}
+            ]}
+          ]}
+          - {label: "Partnership", name: "partnership", widget: object, fields: [
+            {label: "Title", name: "title", widget: string},
+            {label: "Partnerships", name: "partnerships", widget: list, fields: [
+              {label: "Logo", name: "logo", widget: image}
+            ]}
+          ]}
+          - {label: "Footer", name: "footer", widget: object, fields: [
+            {label: "Image", name: "image", widget: image},
+            {label: "Phone", name: "phone", widget: string},
+            {label: "Mail", name: "mail", widget: string},
+            {label: "Company", name: "company", widget: string},
+            {label: "NIP", name: "nip", widget: string},
+            {label: "REGON", name: "regon", widget: string},
+            {label: "KRS", name: "krs", widget: string}
           ]}
       - file: "site/content/contact/_index.md"
         label: "Contact Page"

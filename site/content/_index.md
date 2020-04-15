@@ -17,12 +17,14 @@ values:
     heading: Our values
     text: Coffee is an amazing part of human culture but it has a dark side too – one of colonialism and mindless abuse of natural resources and human lives. We want to turn this around and return the coffee trade to the drink’s exhilarating, empowering and unifying nature.
 video:
-    clients_video: 
-    clients_title: For Clients
-    clients_subtitle: Build your team with us.
-    specialists_video:
-    specialists_title: For Specialists
-    specialists_subtitle: Are you looking for your dream team?
+    clients:
+      video: testURL
+      title: For Clients
+      subtitle: Build your team with us.
+    specialists:
+      video: testURL
+      title: For Specialists
+      subtitle: Are you looking for your dream team?
 trusted_by:
     - brand: Mercedes-Benz
       description: "I'm really glad we had a chance to cooperate with BHT. All projects were delivered always before the deadline with better quality I expected."
@@ -50,15 +52,15 @@ how_we_work:
         - heading: Outsourcing
           description: Choose from the Europe's most talented individuals available in our community to join your team and share their knowledge across your organization.
           action: Hire us
-          action_url:
+          action_url: testURL
         - heading: Team as a Service
           description: Share with us your project goals and we will build a complete, tailored team of experts.
           action: Build team
-          action_url:
+          action_url: testURL
         - heading: Software delivery
           description: Choose us as your software provider and realize your technology project with us.
           action: Send brief
-          action_url:
+          action_url: testURL
 coworkers:
     title: We are proud to have worked with the best.
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rutrum mi ipsum, nec lobortis lectus accumsan in. Morbi in dignissim sapien. Proin faucibus cursus augue in pellentesque. Maecenas dapibus et mauris non pharetra. In tincidunt justo quis tincidunt elementum. Mauris sed dui mauris. Maecenas in cursus ligula. Suspendisse ac quam nec ligula ullamcorper pulvinar ac sit amet mi.
